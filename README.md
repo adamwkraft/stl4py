@@ -12,7 +12,7 @@ There is still more to be done, but I hope this can be the slightest bit of usef
 # Examples
 
 [Unique:](http://en.cppreference.com/w/cpp/algorithm/unique)
-```
+```python
 a = [1, 1, 2, 3, 1, 1, 4, 4, 5, 5]
 unique(a)  # returns [1, 2, 3, 1, 4, 5]
 # With ranges
@@ -22,7 +22,7 @@ a = [2, 4, 6, 1, 3, 5]
 unique(a, key = lambda(x) : x % 2)  # [1, 2]
 ```
 [Partition:](http://en.cppreference.com/w/cpp/algorithm/partition)
-```
+```python
 import random
 a = range(10)
 partition_idx = partition(a, lambda(x) : x % 2 == 0)
