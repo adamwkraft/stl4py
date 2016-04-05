@@ -23,7 +23,6 @@ unique(a, key = lambda(x) : x % 2)  # [1, 2]
 ```
 [Partition:](http://en.cppreference.com/w/cpp/algorithm/partition)
 ```python
-import random
 a = range(10)
 partition_idx = partition(a, lambda(x) : x % 2 == 0)
 print partition_idx  # prints 5
