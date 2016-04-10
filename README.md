@@ -13,6 +13,7 @@ There is still more to be done, but I hope this can be the slightest bit of usef
 
 [Unique:](http://en.cppreference.com/w/cpp/algorithm/unique)
 ```python
+import stl4py
 a = [1, 1, 2, 3, 1, 1, 4, 4, 5, 5]
 unique(a)  # returns [1, 2, 3, 1, 4, 5]
 # With ranges
@@ -23,6 +24,7 @@ unique(a, key = lambda(x) : x % 2)  # [1, 2]
 ```
 [Partition:](http://en.cppreference.com/w/cpp/algorithm/partition)
 ```python
+import stl4py
 a = range(10)
 partition_idx = partition(a, lambda(x) : x % 2 == 0)
 print partition_idx  # prints 5
