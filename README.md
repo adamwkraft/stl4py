@@ -41,17 +41,9 @@ import stl4py
 s = 'Hello, World!'
 lower_count = count_if(s, lambda x: x.islower())
 print lower_count  # prints 8
-
-
-a = range(10)
-partition_idx = partition(a, lambda(x) : x % 2 == 0)
-print partition_idx  # prints 5
-print a  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] (technically there are other valid outputs)
-# Partition a range
-a = range(10)
-partition_idx = partition(a, lambda(x) : x % 2 == 0, first=0, last=6)
-print partition_idx  # prints 3
-print a  # [0, 4, 2, 3, 1, 5, 6, 7, 8, 9]
+a = range(100)
+odd_count = count_if(a, lambda x: x % 2 == 0)
+print odd_count  # prints 50
 ```
 
 # Other
