@@ -1,5 +1,5 @@
 """
-Module containing python like versions of common C++ STL functions.
+Module containing python-like versions of common C++ STL functions.
 """
 import itertools
 
