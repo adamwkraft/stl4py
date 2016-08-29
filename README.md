@@ -20,7 +20,7 @@ unique(a)  # returns [1, 2, 3, 1, 4, 5]
 unique(a, first=3, last=7)  # [3, 1, 4]
 # With key function
 a = [2, 4, 6, 1, 3, 5]
-unique(a, key = lambda(x) : x % 2)  # [1, 2]
+unique(a, key=lambda(x) : x % 2)  # [2, 1]
 ```
 [Partition:](http://en.cppreference.com/w/cpp/algorithm/partition)
 ```python
