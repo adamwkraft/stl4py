@@ -11,9 +11,21 @@ There is still more to be done, but I hope this can be the slightest bit of usef
 
 # Examples
 
+[Nth Element:](https://en.cppreference.com/w/cpp/algorithm/nth_element)
+```python
+from stl4py import nth_element
+arr = [8, 2, 3, 6, 7, 1, 9, 0, 4, 5]  # Shuffled values from 0-9
+nth_element(arr, n=6)
+# arr is now partitioned, such that the 6th index contains the value
+# at that position if the array were fully sorted.
+# Also everything before index 6 is less than that value
+# and everything after index 6 is greater than that value.
+print arr  # One possible output: [0, 2, 3, 4, 1, 5, 6, 8, 7, 9]
+```
+
 [Unique:](http://en.cppreference.com/w/cpp/algorithm/unique)
 ```python
-import stl4py
+from stl4py import unique
 a = [1, 1, 2, 3, 1, 1, 4, 4, 5, 5]
 unique(a)  # returns [1, 2, 3, 1, 4, 5]
 # With ranges
@@ -24,7 +36,7 @@ unique(a, key=lambda(x) : x % 2)  # [2, 1]
 ```
 [Partition:](http://en.cppreference.com/w/cpp/algorithm/partition)
 ```python
-import stl4py
+from stl4py import partition_idx
 a = range(10)
 partition_idx = partition(a, lambda(x) : x % 2 == 0)
 print partition_idx  # prints 5
@@ -37,7 +49,7 @@ print a  # [0, 4, 2, 3, 1, 5, 6, 7, 8, 9]
 ```
 [Count_if:](http://en.cppreference.com/w/cpp/algorithm/count)
 ```python
-import stl4py
+from stl4py import count_if
 s = 'Hello, World!'
 lower_count = count_if(s, lambda x: x.islower())
 print lower_count  # prints 8
@@ -48,8 +60,5 @@ print odd_count  # prints 50
 
 # Other
 Here are other functions available to explore:
-* count_if
 * partition_with_pivot
-* nth_element
 * minmax_element
-* More to come!
